@@ -1,0 +1,16 @@
+<ul id="messages"></ul>
+
+<script>
+function stream(){
+    var messages = document.getElementById('messages');
+    var randnum = 20 + Math.floor( Math.random() * 61 );
+    var comment = document.createElement('Marquee');
+    comment.textContent = "頑張るぞい！";
+    comment.loop = 1;
+    comment.style.position = "absolute"
+    comment.style.bottom = randnum.toString() + "%"
+    messages.appendChild(comment);
+ }
+
+setInterval(stream, 3000);
+</script>
